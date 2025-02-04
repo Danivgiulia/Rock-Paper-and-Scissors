@@ -79,6 +79,10 @@ h1 {
     margin : 10px;
 }
 
+.scoreDisplay{
+    font-size: 2rem;
+}
+
 /* Media Querys: Tabelts and larger (768px and up) */
 @media only screen and (min-width: 768px) {
 

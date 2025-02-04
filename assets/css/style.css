@@ -33,5 +33,12 @@ h1 {
     margin: 5px 10px;
     border-radius: 20px;
     cursor: pointer;
+}
 
+#playerDisplay, #computerDisplay {
+    font-size: 2rem;
+}
+
+#resultsDisplay {
+    font-size: 3rem;
 }

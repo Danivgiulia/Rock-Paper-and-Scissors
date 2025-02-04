@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Lexend+Giga:wght@100..900&display=swap');
 
 /* Wild card selector to override default styles */
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -41,17 +41,16 @@ h1 {
 .buttons button {
     font-size: 3rem;
     min-width: 160px;
-    margin: 5px 10px;
+    margin: 10px 10px;
     border-radius: 20px;
     cursor: pointer;
-    size: 225px;
     background-color: #f5f4f0;
-    
+
 }
 
-.buttons img{
+.buttons img {
     border-radius: 20px;
-    width: 150px;
+    width: 225px;
     height: 150px;
 }
 
@@ -65,22 +64,46 @@ h1 {
 }
 
 
-#playerDisplay, #computerDisplay {
+#playerDisplay,
+#computerDisplay {
     font-size: 2rem;
     color: rgb(57, 57, 57);
+    margin: 10px;
+    text-align: center;
 }
 
 
 
 #resultDisplay {
     font-size: 3rem;
+    margin : 10px;
 }
 
 /* Media Querys: Tabelts and larger (768px and up) */
-@media only screen and (min-width: 768px){
+@media only screen and (min-width: 768px) {
 
-    h1{
+    .buttons {
+        flex-direction: row;
+    }
 
+    .buttons img {
+        width: 200px;
+        height: 200px;
+    }
+
+    #playerComputerBox {
+        flex-direction: row;
+        justify-content: space-evenly;
+        width: 100%;
+        margin: 10px;
     }
 }
-    
+
+/* Media Querys: Tabelts and larger (992px and up) */
+@media only screen and (min-width: 992px) {
+
+    .buttons img {
+        width: 250px;
+        height: 250px;
+    }
+}

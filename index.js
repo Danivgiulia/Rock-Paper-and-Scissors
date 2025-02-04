@@ -30,10 +30,6 @@ function playGame(playerChoice){
             }
     }
 
-    if(playerChoice === "rock"){
-        Image = (s)
-    }
-
     playerDisplay.textContent = `Your choice: ${playerChoice}`;
     computerDisplay.textContent = `Computer: ${computerChoice}`;
     resultDisplay.textContent = result;

@@ -5,24 +5,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <!-- Stylesheet -->
     <link rel="stylesheet" href="assets/css/style.css">
 
 </head>
 
 <body>
 
+    <!-- Title -->
     <h1>Rock, Paper and Scissors</h1>
 
+    <!-- Buttons -->
     <div class="buttons">
-        <button id="rock" aria-labelledby="Button for the rock option">rock</button>
-        <button id="paper" aria-labelledby="Button for the paper option">paper</button>
-        <button id="scissors" aria-labelledby="Button for the scissors option">scissors</button>
+        <button id="rock" onclick="playGame('rock')" aria-labelledby="Button for the rock option">rock</button>
+        <button id="paper" onclick="playGame('paper')" aria-labelledby="Button for the paper option">paper</button>
+        <button id="scissors" onclick="playGame('scissors')"
+            aria-labelledby="Button for the scissors option">scissors</button>
     </div>
 
-    <div id="playerDisplay">Player</div>
-    <div id="computerDisplay">Computer</div>
-    <div id="resultsDisplay">Results</div>
+    <!-- Displays -->
+    <div id="playerDisplay">Player:</div>
+    <div id="computerDisplay">Computer:</div>
+    <div id="resultDisplay"></div>
 
+
+    <!-- Javascript link -->
+    <script src="index.js"></script>
 </body>
 
 </html>

@@ -34,10 +34,12 @@ function playGame(playerChoice){
             }
     }
 
+    // Displays the choices
     playerDisplay.textContent = `Your choice: ${playerChoice}`;
     computerDisplay.textContent = `Computer: ${computerChoice}`;
     resultDisplay.textContent = result;
 
+    // Keeps track of the scores
     switch(result){
         case "You Win":
             playerScore++;

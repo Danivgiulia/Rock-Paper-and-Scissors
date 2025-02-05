@@ -1,5 +1,6 @@
 /* Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Lexend+Giga:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Lexend+Giga:wght@100..900&display=swap');
 
 /* Wild card selector to override default styles */
 * {
@@ -8,8 +9,7 @@
     box-sizing: border-box;
 }
 
-
-/* Body styles */
+/* General body styles */
 body {
     font-family: 'Lexend Giga', Helvetica, sans-serif;
     font-weight: bold;
@@ -63,7 +63,6 @@ h1 {
     margin: 10px;
 }
 
-
 #playerDisplay,
 #computerDisplay {
     font-size: 2rem;
@@ -72,15 +71,44 @@ h1 {
     text-align: center;
 }
 
-
-
 #resultDisplay {
     font-size: 3rem;
-    margin : 10px;
+    margin: 10px;
+    border: solid;
+    border-color: rgb(57, 57, 57);
+    border-radius: 20px;
+    width: 90%;
+    padding: 10px 10px;
+    text-align: center;
 }
 
-.scoreDisplay{
+.scoreDisplayBox {
     font-size: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 10px;
+    margin: 10px;
+    color: rgb(57, 57, 57);
+    text-align: center;
+    width: 100%;
+}
+
+.scoreDisplayBox span {
+    font-family: "Indie Flower", Helvetica, sans-serif;
+    color: rgb(57, 57, 57);
+    font-size: 3rem;
+}
+
+/* Footer */
+#footer {
+    width: 100%;
+    background-color: rgb(57, 57, 57);
+    color: #f5f4f0;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
 }
 
 /* Media Querys: Tabelts and larger (768px and up) */
@@ -101,7 +129,18 @@ h1 {
         width: 100%;
         margin: 10px;
     }
+
+    .scoreDisplayBox {
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    .playerScoreBox, .computerScoreBox {
+        width: 100%;
+    }
+
 }
+
 
 /* Media Querys: Tabelts and larger (992px and up) */
 @media only screen and (min-width: 992px) {

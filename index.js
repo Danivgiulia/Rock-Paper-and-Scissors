@@ -18,7 +18,7 @@ function playGame(playerChoice){
     let result = "";
 
     if(playerChoice === computerChoice){
-        result = "ITS A TIE!";
+        result = "It's a tie";
      }   
      else {
             switch(playerChoice){
